@@ -1,7 +1,7 @@
 package com.example.trainingproject.di
 
-import com.example.trainingproject.repositories.MainRepository
-import com.example.trainingproject.repositories.MainRepositoryImpl
+import com.example.trainingproject.repositories.AuthRepository
+import com.example.trainingproject.repositories.AuthRepositoryImpl
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -33,9 +33,8 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideMainRepository(
+    fun provideAuthRepository(
         auth: FirebaseAuth,
-        firestore: FirebaseFirestore,
-        storage: FirebaseStorage
-    ): MainRepository = MainRepositoryImpl(auth, firestore, storage)
+        firestore: FirebaseFirestore
+    ): AuthRepository = AuthRepositoryImpl(auth, firestore)
 }
