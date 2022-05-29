@@ -1,3 +1,36 @@
 <resources>
-    <string name="app_name">Training Project</string>
+    <string name="app_name">Chat App</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="register_new_account">Register a new account</string>
+    <string name="no_account_register">Don\'t have an account? Register</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="error_empty_fields">All fields are required</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_username_empty">Username can not be empty</string>
+    <string name="error_username_too_short">Username must not be less than %d characters</string>
+    <string name="error_username_too_long">Username must not be more than %d characters</string>
+    <string name="error_password_too_short">Password must not be less than %d characters</string>
+    <string name="error_no_changes">No changes were made</string>
+    <string name="more">More</string>
+    <string name="logout">Logout</string>
+    <string name="skip">Skip</string>
+    <string name="complete_your_profile">Complete your profile</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="bio">Bio</string>
+    <string name="upload_profile_picture">Upload a profile picture</string>
+    <string name="save">Save</string>
+    <string name="new_chat">New chat</string>
+    <string name="back">Back</string>
+    <string name="select_user">Select User</string>
+    <string name="type_a_message">Type a message…</string>
+    <string name="send">Send</string>
+    <string name="recent_conversations">Recent Conversations</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="successfully_updated_profile">Changes were saved successfully</string>
 </resources>
