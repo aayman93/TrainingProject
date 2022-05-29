@@ -17,7 +17,7 @@ class Event<out T>(private val content: T) {
 }
 
 class EventObserver<T>(
-    private inline val onError: ((Int) -> Unit)? = null,
+    private inline val onError: ((Int?, String?) -> Unit)? = null,
     private inline val onLoading: (() -> Unit)? = null,
     private inline val onSuccess: (T) -> Unit
 ) : Observer<Event<Resource<T>>> {
@@ -29,7 +29,7 @@ class EventObserver<T>(
             }
             is Resource.Error -> {
                 t.getContentIfNotHandled()?.let {
-                    onError?.invoke(it.errorRes!!)
+                    onError?.invoke(it.errorRes, it.message)
                 }
             }
             is Resource.Loading -> {

@@ -11,3 +11,11 @@ fun Fragment.snackbar(@StringRes errorRes: Int) {
         Snackbar.LENGTH_LONG
     ).show()
 }
+
+fun Fragment.snackbar(text: String?) {
+    Snackbar.make(
+        requireView(),
+        text ?: "Unknown error occurred",
+        Snackbar.LENGTH_LONG
+    ).show()
+}

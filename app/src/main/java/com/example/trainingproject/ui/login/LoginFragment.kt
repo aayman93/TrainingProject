@@ -61,10 +61,10 @@ class LoginFragment : Fragment() {
 
     private fun subscribeToObservables() {
         viewModel.loginStatus.observe(viewLifecycleOwner, EventObserver(
-            onError = {
+            onError = { errorRes, message ->
                 binding.progressBar.isVisible = false
                 binding.buttonLogin.isVisible = true
-                snackbar(it)
+                if (errorRes == null) snackbar(message) else snackbar(errorRes)
             },
             onLoading = {
                 binding.progressBar.isVisible = true
