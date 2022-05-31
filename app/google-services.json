@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "822998619265",
-    "project_id": "training-project-9a050",
-    "storage_bucket": "training-project-9a050.appspot.com"
+    "project_number": "311995525573",
+    "project_id": "chatapp-74fa6",
+    "storage_bucket": "chatapp-74fa6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:822998619265:android:cea5220a3555ed44366980",
+        "mobilesdk_app_id": "1:311995525573:android:44d10979f7e798554283ac",
         "android_client_info": {
           "package_name": "com.example.trainingproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "822998619265-9en0l7i4j1v62gur9epje7tsarjc76af.apps.googleusercontent.com",
+          "client_id": "311995525573-kg9lf6ih0krvr5fdnr3jd3ulia6pikbu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDgL5gHlGQrH67QkqirSMJvlZAdQBlWx1w"
+          "current_key": "AIzaSyCRlYbABHO38eRg48P31zGCDLp0EH86siY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "822998619265-9en0l7i4j1v62gur9epje7tsarjc76af.apps.googleusercontent.com",
+              "client_id": "311995525573-kg9lf6ih0krvr5fdnr3jd3ulia6pikbu.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "311995525573-p90ora0l4e128qlfhc6v8jgjljfusgr6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "eslam.ChatApp"
+              }
             }
           ]
         }
