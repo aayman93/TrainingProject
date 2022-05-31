@@ -18,8 +18,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/TrainingProject/app/src/main/res/layout/fragment_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TrainingProject/app/src/main/res/layout/fragment_users.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TrainingProject/app/src/main/res/layout/item_conversation.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/TrainingProject/app/src/main/res/layout/item_received_message.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/TrainingProject/app/src/main/res/layout/item_sent_message.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TrainingProject/app/src/main/res/layout/item_received_message.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TrainingProject/app/src/main/res/layout/item_sent_message.xml" value="0.15625" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TrainingProject/app/src/main/res/layout/item_user.xml" value="0.25416666666666665" />
       </map>
     </option>

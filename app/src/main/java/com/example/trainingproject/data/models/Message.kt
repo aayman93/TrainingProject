@@ -12,6 +12,6 @@ data class Message(
 )
 
 enum class MessageType {
-    Text,
-    Image
+    TEXT,
+    IMAGE
 }

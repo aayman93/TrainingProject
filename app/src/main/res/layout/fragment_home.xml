@@ -43,9 +43,9 @@
             android:paddingHorizontal="@dimen/_16sdp"
             android:paddingTop="@dimen/_8sdp"
             android:paddingBottom="@dimen/_16sdp"
-            android:visibility="gone"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:stackFromEnd="true"
+            tools:listitem="@layout/item_received_message"
             tools:visibility="visible" />
 
         <com.google.android.material.progressindicator.CircularProgressIndicator
