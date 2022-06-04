@@ -1,6 +1,5 @@
 package com.example.trainingproject.ui.home.adapter
 
-import android.util.Log
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
@@ -15,15 +14,14 @@ class SentMessageViewHolder(
 
     fun bind(chatMessage: Message) {
         with(binding) {
-            if (chatMessage.type == MessageType.TEXT) {
-                tvMessageContent.text = chatMessage.body
-                showText()
-            } else {
+            if (chatMessage.type == MessageType.IMAGE) {
                 showImage()
                 image.load(chatMessage.body)
+            } else {
+                tvMessageContent.text = chatMessage.body
+                showText()
             }
-            Log.d("adapter", "Date is: ${chatMessage.date}")
-            tvTimestamp.text = chatMessage.date.toString()
+            tvTimestamp.text = chatMessage.date?.getReadableDateTime()
         }
     }
 

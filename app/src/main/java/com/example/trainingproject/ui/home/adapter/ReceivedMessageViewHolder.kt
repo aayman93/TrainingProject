@@ -14,12 +14,12 @@ class ReceivedMessageViewHolder(
 
     fun bind(chatMessage: Message) {
         with(binding) {
-            if (chatMessage.type == MessageType.TEXT) {
-                tvMessageContent.text = chatMessage.body
-                showText()
-            } else {
+            if (chatMessage.type == MessageType.IMAGE) {
                 showImage()
                 image.load(chatMessage.body)
+            } else {
+                tvMessageContent.text = chatMessage.body
+                showText()
             }
             tvTimestamp.text = chatMessage.date?.getReadableDateTime()
         }

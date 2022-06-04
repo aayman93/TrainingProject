@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <ImageView
+        android:id="@+id/button_logout"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logout"
+        android:src="@drawable/ic_logout"
+        app:tint="@color/white"/>
+
     <TextView
         android:id="@+id/tv_chat_name"
         android:layout_width="0dp"
@@ -78,6 +90,25 @@
             app:tint="@color/color_button_state" />
     </FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/button_select_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@drawable/background_chat_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_send">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/send"
+            android:padding="@dimen/_8sdp"
+            app:srcCompat="@drawable/ic_image"
+            app:tint="@color/color_button_state" />
+    </FrameLayout>
+
     <EditText
         android:id="@+id/input_message"
         android:layout_width="0dp"
@@ -92,9 +123,9 @@
         android:paddingHorizontal="@dimen/_16sdp"
         android:textColor="@color/white"
         android:textColorHint="@color/secondaryDarkColor"
-        app:layout_constraintBottom_toBottomOf="@id/button_send"
-        app:layout_constraintEnd_toStartOf="@id/button_send"
+        app:layout_constraintBottom_toBottomOf="@id/button_select_image"
+        app:layout_constraintEnd_toStartOf="@id/button_select_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_send" />
+        app:layout_constraintTop_toTopOf="@id/button_select_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
