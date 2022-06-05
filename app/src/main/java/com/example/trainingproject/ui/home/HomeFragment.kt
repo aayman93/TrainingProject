@@ -142,7 +142,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun sendImageMessage(imageUri: Uri) {
-        storage.getReference(auth.currentUser?.uid!!).putFile(imageUri).addOnSuccessListener { uploadTask ->
+        storage.getReference("${UUID.randomUUID()}").putFile(imageUri).addOnSuccessListener { uploadTask ->
             uploadTask.metadata?.reference?.downloadUrl?.addOnSuccessListener {
                 val messageBody = it.toString()
                 val sender = auth.currentUser?.email
