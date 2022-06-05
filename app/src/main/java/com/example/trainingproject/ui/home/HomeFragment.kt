@@ -89,7 +89,7 @@ class HomeFragment : Fragment() {
 
         binding.buttonLogout.setOnClickListener {
             auth.signOut()
-            findNavController().navigateUp()
+            navigateToLogin()
         }
     }
 
@@ -171,6 +171,11 @@ class HomeFragment : Fragment() {
         }.addOnFailureListener {
             Log.e("FIRESTORE", "Sending failed...", it)
         }
+    }
+
+    private fun navigateToLogin() {
+        val action = HomeFragmentDirections.actionHomeFragmentToLoginFragment()
+        findNavController().navigate(action)
     }
 
     override fun onDestroyView() {
